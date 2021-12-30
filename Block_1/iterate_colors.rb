@@ -9,7 +9,7 @@ def iterate_colors(colors)
     # Your code here
     unless colors.empty?
       a = Array.new
-      colors.sort.each do
+      colors.sort.each do # Auch mit "collect" möglich?
           |c| a.push(c)
       end.each { |c| puts c }
     end
