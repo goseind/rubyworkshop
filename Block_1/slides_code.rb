@@ -44,3 +44,25 @@ Code unless Bedingung
 def how_many_messages(n)
     "Sie haben " + n.to_s + (n==1 ? " Nachricht." : " Nachrichten.")
 end
+
+
+while Bedingung do
+  Code
+end
+
+until Bedingung do
+  Code
+end
+
+a = [1,2,3]
+puts a.pop until a.empty?
+
+for Var in Sammlung do
+  Rumpf
+end
+
+
+hash = {:a=>1, :b=>2, :c=>3}
+hash.each do |key,value|
+  puts "#{key} => #{value}"
+end
