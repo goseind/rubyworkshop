@@ -1,4 +1,4 @@
-# Aufgabe: Über Array iterrieren und sortiert ausgeben
+# Aufgabe: Über Array iterieren und sortiert ausgeben
 
 # Ein vollen/leeres String Array mit Farben
 col_full = %w(green blue yellow pink)
@@ -9,9 +9,9 @@ def iterate_colors(colors)
     # Your code here
     unless colors.empty?
       a = Array.new
-      colors.each do
+      colors.sort.each do
           |c| a.push(c)
-      end.sort.each { |c| puts c }
+      end.each { |c| puts c }
     end
   end
 
