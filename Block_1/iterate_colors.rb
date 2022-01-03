@@ -1,4 +1,7 @@
-# Aufgabe: Über Array iterieren und sortiert ausgeben
+=begin
+Implementiere eine Funktion, die über eine Farbliste iteriert, diese sortiert in ein neues Array schreibt und pro Zeile ausgibt!
+Überprüfe zu Beginn, ob die Farbliste leer ist.
+=end
 
 # Ein vollen/leeres String Array mit Farben
 col_full = %w(green blue yellow pink)
