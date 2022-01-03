@@ -104,3 +104,30 @@ array.collect do |x|
   next 0 if x == nil  # Vorzeitiges Ende, wenn x nil ist
   next x, x*x         # Zwei Werte zurückgeben
 end
+
+# BEGIN und END
+BEGIN {
+  # Globaler Initialisierungscode hier
+}
+END {
+  # Globaler Shutdown-Code hier
+}
+
+# Threads
+def readfiles(filenames)
+  threads = filenames.map do |f|
+    Thread.new { File.read(f) }
+  end
+  threads.map {|t| t.value }
+end
+
+# Methoden
+def factorial(n)
+  if n < 1
+    raise "Argument muss > 0 sein"
+  elsif n == 1
+    1
+  else
+    n * factorial(n-1)
+  end
+end
