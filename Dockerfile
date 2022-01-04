@@ -1,8 +1,10 @@
 # Preperation according to https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html
-RUN pip install --no-cache-dir notebook
-RUN pip install --no-cache-dir jupyterhub
+FROM scratch
 
-FROM minad/sciruby-notebooks:601f3e30cd43
+FROM minad/sciruby-notebooks:latest
+
+# RUN pip install --no-cache-dir notebook
+# RUN pip install --no-cache-dir jupyterhub
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
@@ -23,12 +25,12 @@ USER ${NB_USER}
 
 # sciruby-notebooks from https://github.com/SciRuby/sciruby-notebooks/blob/master/Dockerfile
 # Add ecell4 dependencies
-RUN apt-get update
-RUN apt-get install -y build-essential ruby ruby-dev libzmq3 libzmq3-dev gnuplot-nox libgsl0-dev libtool autoconf automake zlib1g-dev libsqlite3-dev libmagick++-dev imagemagick libatlas-base-dev && apt-get clean
-RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
+# RUN apt-get update
+# RUN apt-get install -y build-essential ruby ruby-dev libzmq3 libzmq3-dev gnuplot-nox libgsl0-dev libtool autoconf automake zlib1g-dev libsqlite3-dev libmagick++-dev imagemagick libatlas-base-dev && apt-get clean
+# RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
 
-RUN gem update --no-document --system && gem install --no-document sciruby-full
+# RUN gem update --no-document --system && gem install --no-document sciruby-full
 
-USER ${NB_USER}
+# USER ${NB_USER}
 
-RUN iruby register
+# RUN iruby register
