@@ -1,10 +1,14 @@
-# Preperation according to https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html
-FROM scratch
+FROM ubuntu:jammy-20220101
 
-FROM minad/sciruby-notebooks:latest
+RUN apt-get update
+RUN apt-get install python3 -y
+RUN apt-get install python3-pip -y
+RUN pip install --no-cache-dir notebook
+RUN pip install --no-cache-dir jupyterhub
+RUN apt install libtool libffi-dev ruby ruby-dev make -y
 
-# RUN pip install --no-cache-dir notebook
-# RUN pip install --no-cache-dir jupyterhub
+RUN gem install iruby
+RUN iruby register --force
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
@@ -22,15 +26,3 @@ COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
-
-# sciruby-notebooks from https://github.com/SciRuby/sciruby-notebooks/blob/master/Dockerfile
-# Add ecell4 dependencies
-# RUN apt-get update
-# RUN apt-get install -y build-essential ruby ruby-dev libzmq3 libzmq3-dev gnuplot-nox libgsl0-dev libtool autoconf automake zlib1g-dev libsqlite3-dev libmagick++-dev imagemagick libatlas-base-dev && apt-get clean
-# RUN ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
-
-# RUN gem update --no-document --system && gem install --no-document sciruby-full
-
-# USER ${NB_USER}
-
-# RUN iruby register
