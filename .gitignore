@@ -1,3 +1,6 @@
+# Jupyter Notebook Checkpoints
+*.ipynb_checkpoints
+
 *.gem
 *.rbc
 /.config
@@ -54,10 +57,3 @@ build-iPhoneSimulator/
 
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
 # .rubocop-https?--*
-
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-
-# IPython
-profile_default/
-ipython_config.py
