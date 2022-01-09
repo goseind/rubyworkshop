@@ -1,4 +1,4 @@
-# Ruby Workshop
+# Ruby Ruby Ruby!
 
 ![rubyrubyruby](rubyrubyruby.gif)
 
@@ -6,15 +6,9 @@
 
 Ein interaktiver Ruby Workshop der den Einstieg in diese elegante Progammiersprache ermöglichen soll!
 
-## Gliederung
+## iRuby Jupyter Notebook
 
-Der Workshop beginnt mit einem Einstieg in das Thema und den Voraussetzungen. Anschließend sind alle wichtigen Aspekte von Ruby in drei Themeblöcke untergliedert:
-
-* [Einstieg](Einstieg/Einstieg.rb)
-* [Themenblock 1]()
-* [Themenblock 2]()
-* [Themenblock 3]()
-* [Ausblick](Ausblick/Ausblick.rb)
+Der Workshop ist interaktiv und kann über mybinder aufgerufen werden: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/otiofrui/rubyworkshop/main)
 
 ## Autoren
 
