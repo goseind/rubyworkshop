@@ -2,17 +2,18 @@
 
 ![rubyrubyruby](rubyrubyruby.gif)
 
-**GIF Quelle: https://www.youtube.com/watch?v=qObzgUfCl28**
+*GIF Quelle: https://www.youtube.com/watch?v=qObzgUfCl28*
 
 Ein interaktiver Ruby Workshop der den Einstieg in diese elegante Progammiersprache ermöglichen soll!
 
-## iRuby Jupyter Notebook
+## Workshop aufrufen
 
-Der Workshop ist interaktiv und kann über mybinder aufgerufen werden: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/otiofrui/rubyworkshop/main)
+Der Workshop ist interaktiv und kann über folgenden Link aufgerufen werden: 
 
-## Autoren
+* [Privater Server](https://workshop.necode.de:8000/)
+* Alternativ: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/otiofrui/rubyworkshop/main)
 
-Das Team, das diesen Workshop erstellt hat, besteht aus:
+## Workshop Team
 
 * Sebastian
 * Maria
