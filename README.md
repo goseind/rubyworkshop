@@ -10,8 +10,11 @@ Ein interaktiver Ruby Workshop der den Einstieg in diese elegante Progammierspra
 
 Der Workshop ist interaktiv und kann über folgenden Link aufgerufen werden: 
 
+* [Azure Server](https://workshop2022.germanywestcentral.cloudapp.azure.com:8000/)
+
+Fallback:
 * [Privater Server](https://workshop.necode.de:8000/)
-* Alternativ: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/otiofrui/rubyworkshop/main)
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/otiofrui/rubyworkshop/main)
 
 ## Workshop Team
 
